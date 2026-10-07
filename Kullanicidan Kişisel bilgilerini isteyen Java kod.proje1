@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Hesap/Numara/T.C: ");
+        String hesapNumarasi = scanner.nextLine();123
+
+        System.out.println("Şifre: ");
+        String sifre = scanner.nextLine();
+
+        if (hesapNumarasi.equals("12345678") && sifre.equals("05102007")) {
+            System.out.println("Giriş başarılı!");
+        } else {
+            System.out.println("Hatalı hesap numarası veya şifre.");
+        }
+
+        System.out.println("Hesap Numarası:" + hesapNumarasi);
+        System.out.println("Şifre:" + sifre);
+
+
+    }
+}
