@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class proje1 {
+    public static void main(String[] args) {
+        double sayi1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        sayi1 = input.nextDouble();
+
+        if (sayi1 % 2 == 0) {
+            System.out.println("Sayı çifttir.");
+        } else {
+            System.out.println("Sayı tektir.");
+        }
+
+    }
+}
