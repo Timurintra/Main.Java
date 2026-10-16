@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class proje1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lütfen bir sayı giriniz: ");
+        int sayi = scanner.nextInt();
+        System.out.println("Lütfen ikinci sayıyı giriniz: ");
+        int sayi2 = scanner.nextInt();
+        System.out.println("Lütfen İslem türünü giriniz (+, -, *, /): ");
+        String islem = scanner.next();
+
+        switch (islem) {
+            case "+":
+                System.out.println("Toplam: " + (sayi + sayi2));
+                break;
+            case "-":
+                System.out.println("Fark: " + (sayi - sayi2));
+                break;
+            case "*":
+                System.out.println("Çarpım: " + (sayi * sayi2));
+                break;
+            case "/":
+                System.out.println("Bölüm: " + (sayi / sayi2));
+                break;
+            default:
+                System.out.println("Geçersiz işlem türü!");
+        }
+    }
+}
