@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class proje2 {
+    
+    public static void main(String[] args) {
+       
+        Scanner input = new Scanner(System.in);
+        String isim;
+        String sifre;
+
+        System.out.print("Kullanıcı adınızı oluşturunuz: ");
+        isim = input.nextLine();
+        System.out.print("Şifrenizi oluşturunuz: ");
+        sifre = input.nextLine();
+
+        int i;
+
+        for (i = 0; i < 3; i++) {
+            System.out.print("Kullanıcı adınızı giriniz: ");
+            String kullaniciAdi = input.nextLine();
+            System.out.print("Şifrenizi giriniz: ");
+            String sifreGirisi = input.nextLine();
+
+            if (kullaniciAdi.equals(isim) && sifreGirisi.equals(sifre)) {
+                System.out.println("Giriş başarılı!");
+                break;
+            } else {
+                System.out.println("Hatalı kullanıcı adı veya şifre. Kalan deneme hakkınız: " + (2 - i));
+                if (i == 2) {
+                    System.out.println("Hesabınız kilitlendi. Lütfen daha sonra tekrar deneyiniz.");
+                }
+            }
+        }
+       
+    }
+    
+}
